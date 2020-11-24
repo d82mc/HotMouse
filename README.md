@@ -1,0 +1,2 @@
+# HotMouse
+Click Automation Software
