@@ -1,0 +1,253 @@
+﻿<Window x:Class="HotMouse_2020.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotMouse_2020"
+        mc:Ignorable="d"
+        Loaded="WindowLoaded" Closing="WindowClosing" Title="HotMouse_2020" Height="412.015"
+        Width="497.157" Background="#FF232323">
+    <Grid Margin="0" ScrollViewer.CanContentScroll="true">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="122*"/>
+            <ColumnDefinition Width="85*"/>
+            <ColumnDefinition Width="162*"/>
+            <ColumnDefinition Width="97"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="30*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+            <RowDefinition Height="25*"/>
+        </Grid.RowDefinitions>
+        <Button Cursor="Hand" Click="KeyCap" Background="#FF232323" x:Name="keycap_btn" Content="Capture Key" FontSize="14"
+            FontWeight="Bold" Grid.IsSharedSizeScope="true" ScrollViewer.CanContentScroll="true"
+            IsManipulationEnabled="true" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF7D7D7D" Margin="0" Padding="0,-2,0,0" Grid.ColumnSpan="2">
+        </Button>
+        <Button Cursor="Hand" Click="ClearRow" Background="#FF232323" x:Name="clearrow_btn" Content="Clear Row" Grid.Column="2" FontSize="14"
+            FontWeight="Bold" Grid.IsSharedSizeScope="true" ScrollViewer.CanContentScroll="true"
+            IsManipulationEnabled="true" HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Foreground="#FF7D7D7D" Margin="0" Padding="0,-2,0,0">
+        </Button>
+        <Button Cursor="Hand" Click="CharMode" x:Name="charmodebtn" Content="Use Two Keys" Grid.Column="2" FontSize="14"
+            FontWeight="Bold" Grid.IsSharedSizeScope="true" ScrollViewer.CanContentScroll="true"
+            IsManipulationEnabled="true" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+            Grid.Row="1" Background="#FF232323" Foreground="#FF7D7D7D" Margin="0" Padding="0,-2,0,0">
+        </Button>
+        <TextBox x:Name="textBox1" Margin="0" Grid.Row="3" TextWrapping="Wrap" Background="#FF232323" MaxLength="10"
+             Foreground="#FF7D7D7D" IsReadOnly="true" Text="0, 0" HorizontalContentAlignment="Center"
+             VerticalContentAlignment="Center" Grid.IsSharedSizeScope="true"
+             ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true" FontSize="16" FontWeight="Bold"
+             GotFocus="RowClick"/>
+        <TextBox x:Name="textBox2" Margin="0" Grid.Row="3" TextWrapping="Wrap" Background="#FF232323"
+             MaxLength="1" CharacterCasing="Upper" Foreground="#FF7D7D7D" IsReadOnly="true"
+             HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+             Grid.IsSharedSizeScope="true" ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             FontSize="16" FontWeight="Bold" GotFocus="RowClick" Grid.Column="1"/>
+        <TextBox x:Name="textBox3" Grid.Column="2" Grid.Row="3" TextWrapping="Wrap" Grid.IsSharedSizeScope="true"
+             ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF232323"
+             FontSize="16" FontWeight="Bold" Foreground="#FF7D7D7D" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox4" Grid.Row="4" TextWrapping="Wrap" Background="#FF232323" Foreground="#FF7D7D7D"
+             IsReadOnly="true" Text="0, 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+             Grid.IsSharedSizeScope="true" ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             FontSize="16" FontWeight="Bold" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox5" Grid.Row="4" TextWrapping="Wrap" Background="#FF232323" MaxLength="1"
+             CharacterCasing="Upper" Foreground="#FF7D7D7D" IsReadOnly="true" HorizontalContentAlignment="Center"
+             VerticalContentAlignment="Center" Grid.IsSharedSizeScope="true"
+             ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true" Grid.Column="1" FontSize="16"
+             FontWeight="Bold" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox6" Grid.Column="2" Grid.Row="4" TextWrapping="Wrap" Grid.IsSharedSizeScope="true"
+             ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF232323"
+             FontSize="16" FontWeight="Bold" Foreground="#FF7D7D7D" Margin="0" GotFocus="RowClick"/>
+        <TextBox x:Name="textBox7" Grid.Row="5" TextWrapping="Wrap" Background="#FF232323" Foreground="#FF7D7D7D"
+             IsReadOnly="true" Text="0, 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+             Grid.IsSharedSizeScope="true" ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             FontSize="16" FontWeight="Bold" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox8" Grid.Column="1" Grid.Row="5" TextWrapping="Wrap" Background="#FF232323" MaxLength="1"
+             CharacterCasing="Upper" Foreground="#FF7D7D7D" IsReadOnly="true" HorizontalContentAlignment="Center"
+             VerticalContentAlignment="Center" Grid.IsSharedSizeScope="true"
+             ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true" FontSize="16" FontWeight="Bold"
+             GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox9" Grid.Column="2" Grid.Row="5" TextWrapping="Wrap" Grid.IsSharedSizeScope="true"
+             ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF232323"
+             FontSize="16" FontWeight="Bold" Foreground="#FF7D7D7D" Margin="0" GotFocus="RowClick"/>
+        <TextBox x:Name="textBox10" Grid.Row="6" TextWrapping="Wrap" Background="#FF232323" Foreground="#FF7D7D7D"
+             IsReadOnly="true" Text="0, 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+             Grid.IsSharedSizeScope="true" ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             FontSize="16" FontWeight="Bold" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox11" Grid.Column="1" Grid.Row="6" TextWrapping="Wrap" Background="#FF232323"
+             MaxLength="1" CharacterCasing="Upper" Foreground="#FF7D7D7D" IsReadOnly="true"
+             HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+             Grid.IsSharedSizeScope="true" ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             FontSize="16" FontWeight="Bold" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox12" Grid.Column="2" Grid.Row="6" TextWrapping="Wrap" Grid.IsSharedSizeScope="true"
+             ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF232323"
+             FontSize="16" FontWeight="Bold" Foreground="#FF7D7D7D" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox13" Grid.Row="7" TextWrapping="Wrap" Background="#FF232323" Foreground="#FF7D7D7D"
+             IsReadOnly="true" Text="0, 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+             Grid.IsSharedSizeScope="true" ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             FontSize="16" FontWeight="Bold" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox14" Grid.Column="1" Grid.Row="7" TextWrapping="Wrap" Background="#FF232323"
+             MaxLength="1" CharacterCasing="Upper" Foreground="#FF7D7D7D" IsReadOnly="true"
+             HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+             Grid.IsSharedSizeScope="true" ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             FontSize="16" FontWeight="Bold" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox15" Grid.Column="2" Grid.Row="7" TextWrapping="Wrap" Grid.IsSharedSizeScope="true"
+             ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF232323"
+             FontSize="16" FontWeight="Bold" Foreground="#FF7D7D7D" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox16" Grid.Row="8" TextWrapping="Wrap" Background="#FF232323" Foreground="#FF7D7D7D"
+             IsReadOnly="true" Text="0, 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+             Grid.IsSharedSizeScope="true" ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             FontSize="16" FontWeight="Bold" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox17" Grid.Column="1" Grid.Row="8" TextWrapping="Wrap" Background="#FF232323"
+             MaxLength="1" CharacterCasing="Upper" Foreground="#FF7D7D7D" IsReadOnly="true"
+             HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+             Grid.IsSharedSizeScope="true" ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             FontSize="16" FontWeight="Bold" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox18" Grid.Column="2" Grid.Row="8" TextWrapping="Wrap" Grid.IsSharedSizeScope="true"
+             ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF232323"
+             FontSize="16" FontWeight="Bold" Foreground="#FF7D7D7D" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox19" Grid.Row="9" TextWrapping="Wrap" Background="#FF232323" Foreground="#FF7D7D7D"
+             IsReadOnly="true" Text="0, 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+             Grid.IsSharedSizeScope="true" ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             FontSize="16" FontWeight="Bold" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox20" Grid.Column="1" Grid.Row="9" TextWrapping="Wrap" Background="#FF232323"
+             MaxLength="1" CharacterCasing="Upper" Foreground="#FF7D7D7D" IsReadOnly="true"
+             HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+             Grid.IsSharedSizeScope="true" ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             FontSize="16" FontWeight="Bold" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox21" Grid.Column="2" Grid.Row="9" TextWrapping="Wrap" Grid.IsSharedSizeScope="true"
+             ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF232323"
+             FontSize="16" FontWeight="Bold" Foreground="#FF7D7D7D" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox22" Grid.Row="10" TextWrapping="Wrap" Background="#FF232323" Foreground="#FF7D7D7D"
+             IsReadOnly="true" Text="0, 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+             Grid.IsSharedSizeScope="true" ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             FontSize="16" FontWeight="Bold" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox23" Grid.Column="1" Grid.Row="10" TextWrapping="Wrap" Background="#FF232323"
+             MaxLength="1" CharacterCasing="Upper" Foreground="#FF7D7D7D" IsReadOnly="true"
+             HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+             Grid.IsSharedSizeScope="true" ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             FontSize="16" FontWeight="Bold" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox24" Grid.Column="2" Grid.Row="10" TextWrapping="Wrap" Grid.IsSharedSizeScope="true"
+             ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF232323"
+             FontSize="16" FontWeight="Bold" Foreground="#FF7D7D7D" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox25" Grid.Row="11" TextWrapping="Wrap" Background="#FF232323" Foreground="#FF7D7D7D"
+             IsReadOnly="true" Text="0, 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+             Grid.IsSharedSizeScope="true" ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             FontSize="16" FontWeight="Bold" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox26" Grid.Column="1" Grid.Row="11" TextWrapping="Wrap" Background="#FF232323"
+             MaxLength="1" CharacterCasing="Upper" Foreground="#FF7D7D7D" IsReadOnly="true"
+             HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+             Grid.IsSharedSizeScope="true" ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             FontSize="16" FontWeight="Bold" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox27" Grid.Column="2" Grid.Row="11" TextWrapping="Wrap" Grid.IsSharedSizeScope="true"
+             ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF232323"
+             FontSize="16" FontWeight="Bold" Foreground="#FF7D7D7D" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox28" Grid.Row="12" TextWrapping="Wrap" Background="#FF232323" Foreground="#FF7D7D7D"
+             IsReadOnly="true" Text="0, 0" HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+             Grid.IsSharedSizeScope="true" ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             FontSize="16" FontWeight="Bold" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox29" Grid.Column="1" Grid.Row="12" TextWrapping="Wrap" Background="#FF232323"
+             MaxLength="1" CharacterCasing="Upper" Foreground="#FF7D7D7D" IsReadOnly="true"
+             HorizontalContentAlignment="Center" VerticalContentAlignment="Center"
+             Grid.IsSharedSizeScope="true" ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             FontSize="16" FontWeight="Bold" GotFocus="RowClick" Margin="0"/>
+        <TextBox x:Name="textBox30" Grid.Column="2" Grid.Row="12" TextWrapping="Wrap" Grid.IsSharedSizeScope="true"
+             ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+             HorizontalContentAlignment="Center" VerticalContentAlignment="Center" Background="#FF232323"
+             FontSize="16" FontWeight="Bold" Foreground="#FF7D7D7D" GotFocus="RowClick" Margin="0"/>
+        <Label x:Name="label" Content="Mouse Position" Background="#FF232323" Foreground="#FF7D7D7D" VerticalContentAlignment="Center"
+           FontSize="16" Grid.IsSharedSizeScope="true" ScrollViewer.CanContentScroll="true"
+           IsManipulationEnabled="true" HorizontalContentAlignment="Center" Grid.Row="2" Margin="0,0.4,0,0"/>
+        <Label x:Name="label1" Content="Key String" Background="#FF232323" Foreground="#FF7D7D7D" HorizontalContentAlignment="Center"
+           VerticalContentAlignment="Center" FontSize="16" Grid.IsSharedSizeScope="true"
+           ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true" Grid.Column="1" Grid.Row="2" Margin="0"/>
+        <Label x:Name="label2" Content="Name (Optional)" Grid.Column="2" Foreground="#FF7D7D7D"
+           HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontSize="16"
+           Grid.IsSharedSizeScope="true" ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+           Grid.Row="2" Margin="0"/>
+        <Label x:Name="label3" Content="SINGLE KEY" Background="#FF232323" Grid.Column="3" Foreground="#FF7D7D7D"
+           Grid.IsSharedSizeScope="true" ScrollViewer.CanContentScroll="true" IsManipulationEnabled="true"
+           HorizontalContentAlignment="Center" VerticalContentAlignment="Center" FontWeight="Bold"
+           FontSize="14" Padding="5,1,5,0" Grid.Row="2" Margin="0"/>
+        <Button Cursor="Hand" Click="ButtonClick" x:Name="button" Content="OFF" Grid.Column="3" Grid.Row="3"
+            Background="#FF232323" Foreground="#FF7D7D7D" FontWeight="Bold" FontSize="18" Padding="0,-3,0,0" Margin="0">
+        </Button>
+        <Button Background="#FF232323" Cursor="Hand" Click="ButtonClick" x:Name="button1" Content="OFF" Grid.Column="3" Grid.Row="4"
+            Foreground="#FF7D7D7D" FontWeight="Bold" FontSize="18" Padding="1,-3,1,1" Margin="0">
+        </Button>
+        <Button Background="#FF232323" Cursor="Hand" Click="ButtonClick" x:Name="button2" Content="OFF" Grid.Column="3" Grid.Row="5"
+            Foreground="#FF7D7D7D" FontWeight="Bold" FontSize="18" Padding="1,-3,1,1" Margin="0">
+        </Button>
+        <Button Background="#FF232323" Cursor="Hand" Click="ButtonClick" x:Name="button3" Content="OFF" Grid.Column="3" Grid.Row="6"
+            Foreground="#FF7D7D7D" FontWeight="Bold" FontSize="18" Padding="1,-3,1,1" Margin="0">
+        </Button>
+        <Button Background="#FF232323" Cursor="Hand" Click="ButtonClick" x:Name="button4" Content="OFF" Grid.Column="3" Grid.Row="7"
+            Foreground="#FF7D7D7D" FontWeight="Bold" FontSize="18" Padding="1,-3,1,1" Margin="0">
+        </Button>
+        <Button Background="#FF232323" Cursor="Hand" Click="ButtonClick" x:Name="button5" Content="OFF" Grid.Column="3" Grid.Row="8"
+            Foreground="#FF7D7D7D" FontWeight="Bold" FontSize="18" Padding="1,-3,1,1" Margin="0">
+        </Button>
+        <Button Background="#FF232323" Cursor="Hand" Click="ButtonClick" x:Name="button6" Content="OFF" Grid.Column="3" Grid.Row="9"
+            Foreground="#FF7D7D7D" FontWeight="Bold" FontSize="18" Padding="1,-3,1,1" Margin="0">
+        </Button>
+        <Button Background="#FF232323" Cursor="Hand" Click="ButtonClick" x:Name="button7" Content="OFF" Grid.Column="3" Grid.Row="10"
+            Foreground="#FF7D7D7D" FontWeight="Bold" FontSize="18" Padding="1,-3,1,1" Margin="0">
+        </Button>
+        <Button Background="#FF232323" Cursor="Hand" Click="ButtonClick" x:Name="button8" Content="OFF" Grid.Column="3" Grid.Row="11"
+            Foreground="#FF7D7D7D" FontWeight="Bold" FontSize="18" Padding="1,-3,1,1" Margin="0">
+        </Button>
+        <Button Background="#FF232323" Cursor="Hand" Click="ButtonClick" x:Name="button9" Content="OFF" Grid.Column="3" Grid.Row="12"
+            Foreground="#FF7D7D7D" FontWeight="Bold" FontSize="18" Padding="1,-3,1,1" Margin="0">
+        </Button>
+        <TextBox x:Name="KeyBox" IsReadOnly="True" Margin="0" Grid.Row="13" TextWrapping="Wrap" TextAlignment="Center" Background="#FF232323" Foreground="#FF7D7D7D" FontWeight="Bold" FontSize="14" Padding="1,-1,1,0" ScrollViewer.CanContentScroll="True"/>
+        <Button LostMouseCapture="MouseCap" Cursor="Cross" x:Name="mousecap_btn" Content="Capture Mouse" HorizontalAlignment="Stretch" Margin="0" Grid.Row="1" VerticalAlignment="Stretch" Width="Auto" Padding="0" Background="#FF232323" Foreground="#FF7D7D7D" FontWeight="Bold" FontSize="14" Grid.ColumnSpan="2">
+        </Button>
+        <Label x:Name="label4" Content="Duration:" Background="#FF232323" Grid.Column="2" Margin="0,26.6,96.6,0.8" Grid.Row="12" FontSize="14" Foreground="#FF7D7D7D" FontWeight="Bold" HorizontalAlignment="Right" Width="83" Padding="5,3,5,5" Grid.RowSpan="2" Grid.ColumnSpan="2"/>
+        <Grid Grid.Column="1" Margin="89.2,0.4,0,-0.2" Grid.Row="13" MinWidth="2" MinHeight="2" HorizontalAlignment="Left" Grid.ColumnSpan="2" Width="83">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="RepeatBox" Margin="0" TextWrapping="Wrap" Text="1s" Background="#FF232323" Foreground="#FF7D7D7D" FontWeight="Bold" FontSize="12" TextAlignment="Center" Padding="1,3,1,1" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch" Grid.ColumnSpan="2"/>
+            <Button Cursor="Hand" x:Name="RepeatDown" Content="&lt;" Margin="0" FontSize="20" Padding="0,-5,1,1" Background="#FF232323" Foreground="#FF7D7D7D" PreviewMouseLeftButtonDown="ModifyTimer" PreviewMouseLeftButtonUp="StopChangingTimer" Grid.Column="2"/>
+            <Button Cursor="Hand" x:Name="RepeatUp" Content="&gt;" Grid.Column="3" Margin="0" FontSize="20" Padding="0,-5,1,1" Background="#FF232323" Foreground="#FF7D7D7D" PreviewMouseLeftButtonDown="ModifyTimer" PreviewMouseLeftButtonUp="StopChangingTimer"/>
+        </Grid>
+        <Grid Grid.Column="3" Margin="0" Grid.Row="13" MinWidth="2" MinHeight="2">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+                <ColumnDefinition/>
+            </Grid.ColumnDefinitions>
+            <TextBox x:Name="DurationBox" Margin="0" TextWrapping="Wrap" Text="1ms" Background="#FF232323" Foreground="#FF7D7D7D" FontWeight="Bold" FontSize="12" TextAlignment="Center" Padding="1,3,1,1" Grid.ColumnSpan="2" HorizontalContentAlignment="Stretch" VerticalContentAlignment="Stretch"/>
+            <Button Cursor="Hand" x:Name="DurationDown" Content="&lt;" Grid.Column="2" Margin="0" FontSize="20" Padding="0,-5,1,1" Background="#FF232323" Foreground="#FF7D7D7D" PreviewMouseLeftButtonDown="ModifyTimer" PreviewMouseLeftButtonUp="StopChangingTimer"/>
+            <Button Cursor="Hand" x:Name="DurationUp" Content="&gt;" Grid.Column="3" Margin="0" FontSize="20" Padding="0,-5,1,1" Background="#FF232323" Foreground="#FF7D7D7D" PreviewMouseLeftButtonDown="ModifyTimer" PreviewMouseLeftButtonUp="StopChangingTimer"/>
+        </Grid>
+        <Button Cursor="Hand" Click="LoadButton" x:Name="load_btn" Content="Load" Background="#FF232323" Foreground="#FF7D7D7D" Grid.Column="3" Margin="0" Grid.Row="1">
+        </Button>
+        <Button Cursor="Hand" Click="Save" x:Name="save_btn" Content="Save" Background="#FF232323" Foreground="#FF7D7D7D" Margin="0" Padding="0" Grid.Column="3">
+        </Button>
+        <Button x:Name="Repeat" Content="Repeat:" Margin="0" Grid.Row="13" Background="#FF232323" Foreground="#FF7D7D7D" FontSize="14" FontWeight="Bold" Grid.Column="1" Click="RepeatClick"/>
+    </Grid>
+</Window>

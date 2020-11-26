@@ -1,0 +1,30 @@
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\obj\Debug\HotMouse_2020.csprojAssemblyReference.cache
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\obj\Debug\MainWindow.g.cs
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\obj\Debug\App.g.cs
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\obj\Debug\MainWindow.baml
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\obj\Debug\HotMouse_2020.Properties.Resources.resources
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\obj\Debug\HotMouse_2020.csproj.GenerateResource.cache
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\obj\Debug\HotMouse_2020.csproj.CoreCompileInputs.cache
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\bin\Debug\HotMouse 2020.exe.config
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\bin\Debug\HotMouse 2020.exe.manifest
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\bin\Debug\HotMouse 2020.application
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\bin\Debug\HotMouse 2020.exe
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\bin\Debug\HotMouse 2020.pdb
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\obj\Debug\HotMouse 2020_MarkupCompile.cache
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\obj\Debug\HotMouse 2020_MarkupCompile.lref
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\obj\Debug\HotMouse 2020.g.resources
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\obj\Debug\HotMouse 2020.TrustInfo.xml
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\obj\Debug\HotMouse 2020.exe.manifest
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\obj\Debug\HotMouse 2020.application
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\obj\Debug\HotMouse 2020.exe
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\obj\Debug\HotMouse 2020.pdb
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\bin\Debug\System.Text.Json.dll
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\bin\Debug\System.Memory.dll
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\bin\Debug\System.Text.Encodings.Web.dll
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\bin\Debug\Microsoft.Bcl.AsyncInterfaces.dll
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\obj\Debug\HotMouse 2020.exe.config
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\obj\Debug\HotMouse_2020.csproj.CopyComplete
+C:\Users\Archaic\source\repos\HotMouse_2020\HotMouse_2020\bin\Debug\System.Buffers.dll
